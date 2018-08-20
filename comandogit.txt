@@ -1,0 +1,5 @@
+git --version > verifica a versão do git
+git init > iniciar um reepositorio vazio na pasdta atual
+git config --global user name "Roberval Gadelha" > cria usuario do git
+
+
