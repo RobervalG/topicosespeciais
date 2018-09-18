@@ -1,28 +1,27 @@
 package fvs.edu.br.topicos.resources;
 
-import java.util.List;
-import java.util.ArrayList;
-
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import fvs.edu.br.topicos.domain.Categoria;
+import fvs.edu.br.topicos.service.CategoriaService;
 
 @RestController
 @RequestMapping(value="/categorias")
-public class CategoriaResourse {
+public class categoriaResourse {
+	
+	@Autowired
+	private CategoriaService service;	
 	
 	@RequestMapping(method=RequestMethod.GET)
-	public List<Categoria> listar() {
-		Categoria cat1 = new Categoria(1, "Bombril");
-		Categoria cat2 = new Categoria(2, "Detergente");
+	public ResposeEntity<?> listar(@PathVariable Integer id){
+	Categoria obj = service.Buscat(Id);
+	
 		
-		List<Categoria> lista = new ArrayList <>();
-		lista.add(cat1);
-		lista.add(cat2);
-		
-		return lista;
+		return ResponseEntity.ok(obj);
 				
 	}
 
