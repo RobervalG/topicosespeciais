@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;PrimeiroProgramaSpringg&apos;&#x0D;&#x0A;- Original project: &apos;PrimeiroProgramaSpringg&apos;&#x0D;&#x0A;- Original element: &apos;PrimeiroProgramaSpringg/AulaGit/src/spring.fvs&apos;" description="Delete element" element1="/AulaGit\/src&lt;spring.fvs" element2="/AulaGit\/src&lt;spring" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1535408936970" subPackages="false" version="1.0"/>
+</session>

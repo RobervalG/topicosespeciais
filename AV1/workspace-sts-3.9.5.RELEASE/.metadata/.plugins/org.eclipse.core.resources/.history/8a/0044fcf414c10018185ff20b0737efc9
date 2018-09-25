@@ -1,0 +1,5 @@
+package elecao.repositorios;
+
+public interface CandidatoRepository {
+
+}

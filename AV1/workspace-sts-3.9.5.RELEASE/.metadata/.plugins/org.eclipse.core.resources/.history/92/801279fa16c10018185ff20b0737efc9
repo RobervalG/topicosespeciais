@@ -1,0 +1,12 @@
+package eleicao.services;
+
+import javax.persistence.criteria.CriteriaBuilder.In;
+
+import org.springframework.stereotype.Service;
+
+import eleicao.domain.Candidato;
+
+@Service
+public interface CandidatoService extends JpaService<Candidato, Integer>{
+
+}
