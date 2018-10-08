@@ -17,13 +17,12 @@ public class Principal {
 		System.out.println(aluno);
 		
 		//em.getTransaction().begin();
-		//Aluno aluno1 = new Aluno (null, "Ana Paula", "123", "123", 6571);
+		//Aluno aluno1 = new Aluno (null, "brunno", "123", "123", 6571);
 		//em.persist(aluno1);
 		//em.getTransaction().commit();
 		
-	
-		
+		System.out.println("salvo com sucesso");
+
 	}
-	
 
 }
