@@ -17,18 +17,18 @@ public class Pedido implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue (strategy=GenerationType.IDENTITY)
 	private Integer id;
 	
-	@JsonFormat(pattern="dd/MM/yyyy HH:mm")
+	@JsonFormat (pattern="dd/MM/yyyy HH:mm")	
 	private Date instante;
-	
+
+		
 	@ManyToOne
-	@JoinColumn(name="cliente_id")
+	@JoinColumn (name="ecliente_id")
 	private Cliente cliente;
 	
 	@ManyToOne
-	@JoinColumn(name="endereco_de_entrega_id")
+	@JoinColumn (name="endereco_de_entrega_id")
 	private Endereco enderecoEntrega;
 }
-	
